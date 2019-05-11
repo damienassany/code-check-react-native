@@ -3,7 +3,7 @@ import { getStorybookUI, configure } from '@storybook/react-native';
 
 // import stories
 configure(() => {
-  require('./stories');
+  require('./stories/Label');
 }, module);
 
 const StorybookUI = getStorybookUI({ port: 7007, onDeviceUI: true });
