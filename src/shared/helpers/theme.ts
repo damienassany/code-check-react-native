@@ -2,7 +2,8 @@ export const theme = {
     fs: {
         header: 21,
         label: 18,
-        headerIcon: 25
+        headerIcon: 25,
+        legend: 15
     },
     colors: {
         blue: '#0084b2',
