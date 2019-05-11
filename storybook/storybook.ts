@@ -6,6 +6,7 @@ configure(() => {
   require('./stories/Label');
   require('./stories/ScreenHeader');
   require('./stories/Input');
+  require('./stories/NumberBox');
 }, module);
 
 const StorybookUI = getStorybookUI({ port: 7007, onDeviceUI: true });

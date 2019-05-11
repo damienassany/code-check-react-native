@@ -1,35 +1,273 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots CenteredView default view 1`] = `
+exports[`Storyshots Input Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#019ad0",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#fff",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+    underlineColorAndroid="transparent"
+    value="0657584593"
+  />
+</View>
+`;
+
+exports[`Storyshots Input With label 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 18,
+        "marginBottom": 5,
+      }
+    }
+  >
+    Numéro de téléphone
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#019ad0",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#fff",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+    underlineColorAndroid="transparent"
+    value="0657584593"
+  />
+</View>
+`;
+
+exports[`Storyshots Label Default 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#222",
+      "fontSize": 18,
+    }
+  }
+>
+  Hello Storybook
+</Text>
+`;
+
+exports[`Storyshots Label with color 1`] = `
+<Text
+  style={
+    Object {
+      "color": "red",
+      "fontSize": 18,
+    }
+  }
+>
+  Hello Storybook
+</Text>
+`;
+
+exports[`Storyshots Label with size 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#222",
+      "fontSize": 40,
+    }
+  }
+>
+  Hello Storybook
+</Text>
+`;
+
+exports[`Storyshots NumberBox Default 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#F5FCFF",
-      "flex": 1,
+      "backgroundColor": "#fff",
+      "borderColor": "#019ad0",
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "display": "flex",
+      "height": 40,
       "justifyContent": "center",
+      "padding": 10,
+      "width": 40,
     }
   }
 >
-  <Text>
-    Hello Storybooks
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 18,
+      }
+    }
+  >
+    0
   </Text>
 </View>
 `;
 
-exports[`Storyshots CenteredView with red background 1`] = `
+exports[`Storyshots NumberBox With error 1`] = `
 <View
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "red",
-      "flex": 1,
+      "backgroundColor": "#fff",
+      "borderColor": "#d32e30",
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "display": "flex",
+      "height": 40,
       "justifyContent": "center",
+      "padding": 10,
+      "width": 40,
     }
   }
 >
-  <Text>
-    Hello Storybooks
+  <Text
+    style={
+      Object {
+        "color": "#d32e30",
+        "fontSize": 18,
+      }
+    }
+  >
+    0
+  </Text>
+</View>
+`;
+
+exports[`Storyshots ScreenHeader Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 70,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#222",
+          "fontSize": 25,
+        },
+        Object {
+          "left": 10,
+          "position": "absolute",
+        },
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 21,
+      }
+    }
+  >
+    Créez votre compte
+  </Text>
+</View>
+`;
+
+exports[`Storyshots ScreenHeader With color 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 70,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "red",
+          "fontSize": 25,
+        },
+        Object {
+          "left": 10,
+          "position": "absolute",
+        },
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "red",
+        "fontSize": 21,
+      }
+    }
+  >
+    Créez votre compte
   </Text>
 </View>
 `;
