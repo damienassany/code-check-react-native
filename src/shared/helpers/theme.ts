@@ -3,7 +3,8 @@ export const theme = {
         header: 21,
         label: 18,
         headerIcon: 25,
-        legend: 15
+        legend: 15,
+        small: 13
     },
     colors: {
         blue: '#0084b2',

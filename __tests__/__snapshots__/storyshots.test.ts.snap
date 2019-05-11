@@ -1,5 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Error Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#d32e30",
+      "borderRadius": 5,
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "padding": 10,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 20,
+        },
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "fontFamily": "anticon",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 9,
+        "fontSize": 13,
+      }
+    }
+  >
+    Code incorrect. Touchez "renvoyer le code" si vous n'avez rien reçu.
+  </Text>
+</View>
+`;
+
 exports[`Storyshots Input Default 1`] = `
 <View
   style={
