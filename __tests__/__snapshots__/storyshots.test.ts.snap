@@ -1,5 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Button Default 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderColor": "#019ad0",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "display": "flex",
+      "justifyContent": "center",
+      "opacity": 1,
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 18,
+      }
+    }
+  >
+    Renvoyer le SMS
+  </Text>
+</View>
+`;
+
 exports[`Storyshots Error Default 1`] = `
 <View
   style={

@@ -3,11 +3,12 @@ import { getStorybookUI, configure } from '@storybook/react-native';
 
 // import stories
 configure(() => {
+  require('./stories/Button');
+  require('./stories/Error');
   require('./stories/Label');
-  require('./stories/ScreenHeader');
   require('./stories/Input');
   require('./stories/NumberBox');
-  require('./stories/Error');
+  require('./stories/ScreenHeader');
 }, module);
 
 const StorybookUI = getStorybookUI({ port: 7007, onDeviceUI: true });
