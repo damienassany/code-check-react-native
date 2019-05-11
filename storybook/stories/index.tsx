@@ -24,11 +24,11 @@ const CenteredView: SFC<{ backgroundColor?: string }> = ({ children, backgroundC
 storiesOf('CenteredView', module)
   .add('default view', () => (
     <CenteredView>
-      <Text>Hello Storybook</Text>
+      <Text>Hello Storybooks</Text>
     </CenteredView>
   ))
   .add('with red background', () => (
     <CenteredView backgroundColor="red">
-      <Text>Hello Storybook</Text>
+      <Text>Hello Storybooks</Text>
     </CenteredView>
   ));
