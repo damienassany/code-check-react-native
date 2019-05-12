@@ -1,0 +1,689 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button Default 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderColor": "#58acc9",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "display": "flex",
+      "justifyContent": "center",
+      "opacity": 1,
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 15,
+      }
+    }
+  >
+    Renvoyer le SMS
+  </Text>
+</View>
+`;
+
+exports[`Storyshots CodeVerification Default 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0084b2",
+        "flex": 1,
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 70,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontSize": 25,
+          },
+          Object {
+            "left": 10,
+            "position": "absolute",
+          },
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 21,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Créez votre compte
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "paddingLeft": "10%",
+        "paddingRight": "10%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "column",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#fff",
+            "fontSize": 15,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Numéro de téléphone
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        keyboardType="phone-pad"
+        onChangeText={[Function]}
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "#58acc9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "color": "#fff",
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+        underlineColorAndroid="transparent"
+        value="0657685903"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 40,
+          "marginTop": 40,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#fff",
+            "fontSize": 15,
+          }
+        }
+      >
+        Code de confirmation reçu par SMS
+      </Text>
+      <View
+        accessible={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fff",
+              "borderColor": "#58acc9",
+              "borderRadius": 5,
+              "borderWidth": 1,
+              "display": "flex",
+              "height": 40,
+              "justifyContent": "center",
+              "margin": 4,
+              "padding": 10,
+              "width": 40,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#222",
+                "fontSize": 18,
+              }
+            }
+          >
+            1
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fff",
+              "borderColor": "#58acc9",
+              "borderRadius": 5,
+              "borderWidth": 1,
+              "display": "flex",
+              "height": 40,
+              "justifyContent": "center",
+              "margin": 4,
+              "padding": 10,
+              "width": 40,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#222",
+                "fontSize": 18,
+              }
+            }
+          >
+            2
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fff",
+              "borderColor": "#58acc9",
+              "borderRadius": 5,
+              "borderWidth": 1,
+              "display": "flex",
+              "height": 40,
+              "justifyContent": "center",
+              "margin": 4,
+              "padding": 10,
+              "width": 40,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#222",
+                "fontSize": 18,
+              }
+            }
+          >
+            _
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fff",
+              "borderColor": "#58acc9",
+              "borderRadius": 5,
+              "borderWidth": 1,
+              "display": "flex",
+              "height": 40,
+              "justifyContent": "center",
+              "margin": 4,
+              "padding": 10,
+              "width": 40,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#222",
+                "fontSize": 18,
+              }
+            }
+          >
+            _
+          </Text>
+        </View>
+      </View>
+      <TextInput
+        allowFontScaling={true}
+        keyboardType="numeric"
+        onChangeText={[Function]}
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        underlineColorAndroid="transparent"
+        value="12"
+      />
+    </View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#58acc9",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "bottom": 0,
+          "display": "flex",
+          "justifyContent": "center",
+          "marginBottom": 34,
+          "opacity": 1,
+          "padding": 10,
+          "position": "absolute",
+          "width": "70%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#fff",
+            "fontSize": 15,
+          }
+        }
+      >
+        Renvoyer le SMS
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Error Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#d32e30",
+      "borderRadius": 5,
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "padding": 10,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 20,
+        },
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "fontFamily": "anticon",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 9,
+        "fontSize": 13,
+      }
+    }
+  >
+    Code incorrect. Touchez "renvoyer le code" si vous n'avez rien reçu.
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Input Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    keyboardType="default"
+    onChangeText={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#58acc9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#fff",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+    underlineColorAndroid="transparent"
+    value="0657584593"
+  />
+</View>
+`;
+
+exports[`Storyshots Input With label 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 15,
+        "marginBottom": 5,
+      }
+    }
+  >
+    Numéro de téléphone
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    keyboardType="default"
+    onChangeText={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#58acc9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "color": "#fff",
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+    underlineColorAndroid="transparent"
+    value="0657584593"
+  />
+</View>
+`;
+
+exports[`Storyshots Label Default 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#222",
+      "fontSize": 18,
+    }
+  }
+>
+  Hello Storybook
+</Text>
+`;
+
+exports[`Storyshots Label with color 1`] = `
+<Text
+  style={
+    Object {
+      "color": "red",
+      "fontSize": 18,
+    }
+  }
+>
+  Hello Storybook
+</Text>
+`;
+
+exports[`Storyshots Label with size 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#222",
+      "fontSize": 40,
+    }
+  }
+>
+  Hello Storybook
+</Text>
+`;
+
+exports[`Storyshots NumberBox Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "borderColor": "#58acc9",
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "display": "flex",
+      "height": 40,
+      "justifyContent": "center",
+      "padding": 10,
+      "width": 40,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 18,
+      }
+    }
+  >
+    0
+  </Text>
+</View>
+`;
+
+exports[`Storyshots NumberBox With error 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "borderColor": "#d32e30",
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "display": "flex",
+      "height": 40,
+      "justifyContent": "center",
+      "padding": 10,
+      "width": 40,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#d32e30",
+        "fontSize": 18,
+      }
+    }
+  >
+    0
+  </Text>
+</View>
+`;
+
+exports[`Storyshots ScreenHeader Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 70,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#222",
+          "fontSize": 25,
+        },
+        Object {
+          "left": 10,
+          "position": "absolute",
+        },
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#222",
+        "fontSize": 21,
+        "fontWeight": "600",
+      }
+    }
+  >
+    Créez votre compte
+  </Text>
+</View>
+`;
+
+exports[`Storyshots ScreenHeader With color 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 70,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "red",
+          "fontSize": 25,
+        },
+        Object {
+          "left": 10,
+          "position": "absolute",
+        },
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "red",
+        "fontSize": 21,
+        "fontWeight": "600",
+      }
+    }
+  >
+    Créez votre compte
+  </Text>
+</View>
+`;
