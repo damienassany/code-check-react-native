@@ -2,16 +2,21 @@
  * @format
  */
 
-import {AppRegistry} from 'react-native';
+import {AppRegistry, StatusBar} from 'react-native';
 import App from './App';
 import Storybook from './storybook';
 import {name as appName} from './app.json';
+import { configure } from 'mobx';
+
+configure({ enforceActions: 'observed' })
 
 // TODO export to React Native Config
-const SHOW_STORYBOOK = true;
+const SHOW_STORYBOOK = false;
 
-const Component = SHOW_STORYBOOK
+StatusBar.setBarStyle('light-content')
+
+const EntryPoint = SHOW_STORYBOOK
     ? Storybook
     : App;
 
-AppRegistry.registerComponent(appName, () => Component);
+AppRegistry.registerComponent(appName, () => EntryPoint);
