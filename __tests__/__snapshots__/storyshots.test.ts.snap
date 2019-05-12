@@ -37,6 +37,295 @@ exports[`Storyshots Button Default 1`] = `
 </View>
 `;
 
+exports[`Storyshots CodeVerification Default 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#0084b2",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 70,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontSize": 25,
+          },
+          Object {
+            "left": 10,
+            "position": "absolute",
+          },
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 21,
+        }
+      }
+    >
+      Créez votre compte
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingLeft": "10%",
+        "paddingRight": "10%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "column",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#222",
+            "fontSize": 18,
+            "marginBottom": 5,
+          }
+        }
+      >
+        Numéro de téléphone
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        keyboardType="phone-pad"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "#019ad0",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "color": "#fff",
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+        underlineColorAndroid="transparent"
+        value="0657685903"
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 18,
+        }
+      }
+    >
+      Code de confirmation reçu par SMS
+    </Text>
+    <View
+      accessible={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "borderColor": "#019ad0",
+            "borderRadius": 5,
+            "borderWidth": 1,
+            "display": "flex",
+            "height": 40,
+            "justifyContent": "center",
+            "padding": 10,
+            "width": 40,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 18,
+            }
+          }
+        >
+          1
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "borderColor": "#019ad0",
+            "borderRadius": 5,
+            "borderWidth": 1,
+            "display": "flex",
+            "height": 40,
+            "justifyContent": "center",
+            "padding": 10,
+            "width": 40,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 18,
+            }
+          }
+        >
+          2
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "borderColor": "#019ad0",
+            "borderRadius": 5,
+            "borderWidth": 1,
+            "display": "flex",
+            "height": 40,
+            "justifyContent": "center",
+            "padding": 10,
+            "width": 40,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 18,
+            }
+          }
+        >
+          _
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "borderColor": "#019ad0",
+            "borderRadius": 5,
+            "borderWidth": 1,
+            "display": "flex",
+            "height": 40,
+            "justifyContent": "center",
+            "padding": 10,
+            "width": 40,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 18,
+            }
+          }
+        >
+          _
+        </Text>
+      </View>
+    </View>
+    <TextInput
+      allowFontScaling={true}
+      keyboardType="numeric"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+      underlineColorAndroid="transparent"
+      value="12"
+    />
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#019ad0",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "display": "flex",
+          "justifyContent": "center",
+          "opacity": 1,
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#fff",
+            "fontSize": 18,
+          }
+        }
+      >
+        Renvoyer le SMS
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Error Default 1`] = `
 <View
   style={
@@ -101,6 +390,7 @@ exports[`Storyshots Input Default 1`] = `
 >
   <TextInput
     allowFontScaling={true}
+    keyboardType="default"
     onChangeText={[Function]}
     rejectResponderTermination={true}
     style={
@@ -144,6 +434,7 @@ exports[`Storyshots Input With label 1`] = `
   </Text>
   <TextInput
     allowFontScaling={true}
+    keyboardType="default"
     onChangeText={[Function]}
     rejectResponderTermination={true}
     style={
