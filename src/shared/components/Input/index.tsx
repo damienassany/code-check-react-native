@@ -3,9 +3,12 @@ import { TextInput, StyleSheet, View } from 'react-native';
 import { theme } from '../../helpers/theme';
 import { Label } from '../Label';
 
+type Keyboard = "default" | "email-address" | "numeric" | "phone-pad" | "visible-password" | "ascii-capable" | "numbers-and-punctuation" | "url" | "number-pad" | "name-phone-pad" | "decimal-pad" | "twitter" | "web-search" | undefined;
+
 interface Props {
     onChangeText: () => void;
     value: string;
+    type?: Keyboard;
     label?: string;
 }
 
@@ -30,9 +33,9 @@ const styles = StyleSheet.create({
     }
 });
 
-export const Input: SFC<Props> = ({ onChangeText, value, label = null}) => (
+export const Input: SFC<Props> = ({ onChangeText, value, type = "default", label = null}) => (
     <View style={styles.wrapper}>
         { label && <Label text={label} style={styles.label} /> }
-        <TextInput style={styles.input} onChangeText={onChangeText} value={value} />
+        <TextInput keyboardType={type} style={styles.input} onChangeText={onChangeText} value={value} />
     </View>
 )

@@ -6,7 +6,7 @@ import { theme } from '../../helpers/theme';
 import { fit } from '../../helpers/fit';
 
 interface Props {
-    error: string;
+    error: string | null;
 }
 
 const style = StyleSheet.create({
@@ -31,7 +31,7 @@ const style = StyleSheet.create({
 class Error extends PureComponent<Props> {
     render() {
         const { error } = this.props;
-        return (
+        return error && (
             <View style={style.wrapper}>
                 <Icon style={style.icon} name="closecircle" color={theme.colors.white} size={20} />
                 <Label style={style.label} size={theme.fs.small} text={error} color={theme.colors.white} />
