@@ -8,7 +8,7 @@ export const theme = {
     },
     colors: {
         blue: '#0084b2',
-        lightBlue: '#019ad0',
+        lightBlue: '#58acc9',
         red: '#d32e30',
         white: '#fff',
         black: "#222"

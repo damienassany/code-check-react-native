@@ -9,7 +9,11 @@ interface Props {
     onChangeText: () => void;
     value: string;
     type?: Keyboard;
-    label?: string;
+    label?: {
+        text: string;
+        size?: string;
+        color?: string;
+    };
 }
 
 const styles = StyleSheet.create({
@@ -35,7 +39,7 @@ const styles = StyleSheet.create({
 
 export const Input: SFC<Props> = ({ onChangeText, value, type = "default", label = null}) => (
     <View style={styles.wrapper}>
-        { label && <Label text={label} style={styles.label} /> }
+        { label && <Label color={label.color || theme.colors.black} size={theme.fs.legend} text={label.text} style={styles.label} /> }
         <TextInput keyboardType={type} style={styles.input} onChangeText={onChangeText} value={value} />
     </View>
 )

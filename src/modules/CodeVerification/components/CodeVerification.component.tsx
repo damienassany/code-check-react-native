@@ -8,6 +8,7 @@ import NumberBox from '../../../shared/components/NumberBox';
 import Error from '../../../shared/components/Error';
 import Button from '../../../shared/components/Button';
 import { observer } from 'mobx-react';
+import { fit } from '../../../shared/helpers/fit';
 
 interface Props {
     error: string | null;
@@ -32,6 +33,23 @@ const style = StyleSheet.create({
     },
     input: {
         display: 'none'
+    },
+    content: {
+        paddingLeft: '10%',
+        paddingRight: '10%',
+        flexDirection: 'column',
+        flex: 1
+    },
+    codeWrapper: {
+        marginTop: fit(20),
+        marginBottom: fit(20),
+    },
+    button: {
+        marginBottom: fit(17),
+        width: '70%',
+        alignSelf: 'center',
+        position: 'absolute',
+            bottom: 0
     }
 });
 
@@ -46,28 +64,32 @@ export default class CodeVerification extends Component<Props> {
         const { error, code, phoneNumber, updateCode, updatePhoneNumber } = this.props;
 
         return (
-            <KeyboardAvoidingView style={style.wrapper}>
+            <KeyboardAvoidingView style={style.wrapper} behavior="height">
                 <ScreenHeader icon="arrow-back" label="Créez votre compte" color={theme.colors.white} />
 
-                <View style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-                    <Input type="phone-pad" label="Numéro de téléphone" value={phoneNumber} onChangeText={updatePhoneNumber} />
+                <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+                    <View style={style.content}>
+                        <Input type="phone-pad" label={{ text: "Numéro de téléphone", color: theme.colors.white}} value={phoneNumber} onChangeText={updatePhoneNumber} />
 
-                    <Label color={theme.colors.white} text="Code de confirmation reçu par SMS" />
+                        <View style={style.codeWrapper}>
+                            <Label size={theme.fs.legend} color={theme.colors.white} text="Code de confirmation reçu par SMS" />
 
-                    <TouchableWithoutFeedback onPress={this.focusInput}>
-                        <View style={style.row}>
-                            {new Array(4).fill(1).map((item, index) => (
-                                <NumberBox key={`NumberBox_${index}_${item}`} value={code[index] || '_'} hasError={this.showAlert} />
-                            ))}
+                            <TouchableWithoutFeedback onPress={this.focusInput}>
+                                <View style={style.row}>
+                                    {new Array(4).fill(1).map((item, index) => (
+                                        <NumberBox style={{ margin: fit(2) }} key={`NumberBox_${index}_${item}`} value={code[index] || '_'} hasError={this.showAlert} />
+                                    ))}
+                                </View>
+                            </TouchableWithoutFeedback>
+
+                            <TextInput style={style.input} value={code} keyboardType="numeric" ref="input" onChangeText={updateCode} />
+
+                            <Error style={{ marginTop: fit(7) }} error={error} />
                         </View>
-                    </TouchableWithoutFeedback>
 
-                    <TextInput style={style.input} value={code} keyboardType="numeric" ref="input" onChangeText={updateCode} />
-
-                    <Error error={error} />
-
-                    <Button textColor={theme.colors.white} label="Renvoyer le SMS" onPress={() => Alert.alert('Code = 6655')} />
-                </View>
+                        <Button style={style.button} textColor={theme.colors.white} label="Renvoyer le SMS" onPress={() => Alert.alert('Code = 6655')} />
+                    </View>
+                </TouchableWithoutFeedback>
             </KeyboardAvoidingView>
         );
     }

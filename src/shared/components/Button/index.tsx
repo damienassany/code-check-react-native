@@ -7,6 +7,7 @@ interface Props {
     onPress: () => void;
     label: string;
     textColor?: string;
+    style?: any;
 }
 
 const style = StyleSheet.create({
@@ -24,14 +25,14 @@ const style = StyleSheet.create({
 
 class Button extends PureComponent<Props> {
     render() {
-        const { onPress, label, textColor = theme.colors.black } = this.props;
+        const { onPress, label, textColor = theme.colors.black, style: styleFromProps = {} } = this.props;
 
         return (
             <TouchableOpacity
-                style={style.button}
+                style={StyleSheet.flatten([style.button, styleFromProps])}
                 onPress={onPress}
             >
-                <Label color={textColor} text={label} />
+                <Label size={theme.fs.legend} color={textColor} text={label} />
             </TouchableOpacity>
         );
     }

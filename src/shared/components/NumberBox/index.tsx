@@ -8,6 +8,7 @@ import { fit } from '../../helpers/fit';
 interface Props {
     value: string;
     hasError: boolean;
+    style?: any;
 }
 
 const styles = StyleSheet.create({
@@ -26,12 +27,12 @@ const styles = StyleSheet.create({
 
 class NumberBox extends PureComponent<Props> {
     public render() {
-        const { value, hasError } = this.props;
+        const { value, hasError, style: styleFromProps = {} } = this.props;
         const wrapper = bindStyle(styles.wrapper, { borderColor: hasError ? theme.colors.red : theme.colors.lightBlue });
         const color = hasError ? theme.colors.red : theme.colors.black;
 
         return (
-            <View style={wrapper}>
+            <View style={StyleSheet.flatten([wrapper, styleFromProps])}>
                 <Label text={value} color={color} />
             </View>
         );

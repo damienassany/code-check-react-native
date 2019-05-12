@@ -23,6 +23,9 @@ const styles = StyleSheet.create({
         position: 'absolute',
         left: 10
     },
+    label: {
+        fontWeight: "600"
+    }
 });
 
 class ScreenHeader extends PureComponent<Props> {
@@ -32,7 +35,7 @@ class ScreenHeader extends PureComponent<Props> {
         return (
             <View style={styles.wrapper}>
                 <Icon style={styles.icon} name={icon} size={theme.fs.headerIcon} color={color} />
-                <Label color={color} size={theme.fs.header} text={label}></Label>
+                <Label style={styles.label} color={color} size={theme.fs.header} text={label}></Label>
             </View>
         );
     }

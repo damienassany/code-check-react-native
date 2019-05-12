@@ -7,6 +7,7 @@ import { fit } from '../../helpers/fit';
 
 interface Props {
     error: string | null;
+    style?: any;
 }
 
 const style = StyleSheet.create({
@@ -30,9 +31,10 @@ const style = StyleSheet.create({
 
 class Error extends PureComponent<Props> {
     render() {
-        const { error } = this.props;
+        const { error, style: styleFromProps = {} } = this.props;
+        
         return error && (
-            <View style={style.wrapper}>
+            <View style={StyleSheet.flatten([style.wrapper, styleFromProps])}>
                 <Icon style={style.icon} name="closecircle" color={theme.colors.white} size={20} />
                 <Label style={style.label} size={theme.fs.small} text={error} color={theme.colors.white} />
             </View>
