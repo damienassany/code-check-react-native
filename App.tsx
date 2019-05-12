@@ -11,7 +11,7 @@
 import React, {Component} from 'react';
 import { Provider } from 'mobx-react';
 import stores from './src/stores';
-import CodeVerificationContainer from './src/modules/CodeVerification/container';
+import CodeVerificationContainer from './src/modules/CodeVerification/containers/CodeVerification.container';
 
 interface Props {}
 export default class App extends Component<Props> {

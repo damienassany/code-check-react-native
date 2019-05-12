@@ -1,9 +1,11 @@
 import { observable, action } from 'mobx'
 
-class CodeVerificationStore {
+type Error = string | null;
+
+export class CodeVerificationStore {
     @observable phoneNumber: string = '';
 
-    @observable error: string | null = null;
+    @observable error: Error = null;
 
     @observable code: string = '';
 
@@ -13,7 +15,7 @@ class CodeVerificationStore {
     }
 
     @action
-    updateError = (error: string) => {
+    updateError = (error: Error) => {
         this.error = error;
     }
 

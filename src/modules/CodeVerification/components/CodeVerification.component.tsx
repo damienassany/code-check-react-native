@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, KeyboardAvoidingView, TextInput, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native';
-import { theme } from '../../shared/helpers/theme';
-import ScreenHeader from '../../shared/components/ScreenHeader';
-import { Input } from '../../shared/components/Input';
-import { Label } from '../../shared/components/Label';
-import NumberBox from '../../shared/components/NumberBox';
-import Error from '../../shared/components/Error';
-import Button from '../../shared/components/Button';
+import { theme } from '../../../shared/helpers/theme';
+import ScreenHeader from '../../../shared/components/ScreenHeader';
+import { Input } from '../../../shared/components/Input';
+import { Label } from '../../../shared/components/Label';
+import NumberBox from '../../../shared/components/NumberBox';
+import Error from '../../../shared/components/Error';
+import Button from '../../../shared/components/Button';
 import { observer } from 'mobx-react';
 
 interface Props {

@@ -1,5 +1,11 @@
-import codeVerificationStore from './CodeVerification.store';
+import codeVerificationStore, { CodeVerificationStore } from './CodeVerification.store';
 
-export default {
+export interface Stores {
+    codeVerificationStore: CodeVerificationStore;
+}
+
+const stores: Stores = {
     codeVerificationStore
 };
+
+export default stores;
