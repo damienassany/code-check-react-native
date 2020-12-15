@@ -6,8 +6,8 @@
 
 # Installation
 
-- `git clone https://github.com/damienassany/ecov.git`
-- `cd ecov && npm install`
+- `git clone https://github.com/damienassany/code-check-react-native.git`
+- `cd code-check-react-native && npm install`
 - `react-native link react-native-vector-icons`
 - `react-native run-android` ou depuis Xcode ouvrir le fichier `/ios/ecov.xcodeproj` et cliquer sur "Run"
 
